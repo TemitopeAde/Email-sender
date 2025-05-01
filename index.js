@@ -2,9 +2,11 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const { sendProtonEmail } = require('./controllers/email');
+const cors = require("cors");
 
 
 const app = express();
+app.use(cors("*"))
 app.use(bodyParser.json());
 
 app.post('/api/v1/send-email', sendProtonEmail);
