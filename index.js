@@ -7,7 +7,7 @@ const { sendProtonEmail } = require('./controllers/email');
 const app = express();
 app.use(bodyParser.json());
 
-app.post('/api/v1/send-email', sendProtonEmail)
+app.post('/api/v1/send-email', sendProtonEmail);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
