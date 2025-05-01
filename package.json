@@ -1,0 +1,24 @@
+{
+  "name": "quote-emails",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "postinstall": "apt-get update && apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libx11-xcb1 libxfixes3 libasound2 libpangocairo-1.0-0 libcups2 libdbus-1-3 libxshmfence1 fonts-liberation xdg-utils"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.1",
+    "puppeteer": "^24.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
