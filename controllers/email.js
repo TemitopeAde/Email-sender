@@ -11,7 +11,7 @@ const sendProtonEmail = async (req, res) => {
       const filename = `quote_${safeEmail}_${timestamp}.pdf`;
   
       const htmlContent = data.emailTemplate;
-      const pdfBuffer = await generatePdfBuffer(htmlContent);
+      const pdfBuffer = await generatePdfBuffer(htmlContent)
   
       const transporter = nodemailer.createTransport({
         host: 'smtp.protonmail.ch',
