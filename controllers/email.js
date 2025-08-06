@@ -5,6 +5,8 @@ const { generatePdfBuffer } = require('../utils/pdfgenerator');
 const sendProtonEmail = async (req, res) => {
   try {
     const { email, subject, data } = req.body;
+    console.log(email, subject);
+    
 
     const timestamp = Date.now();
     const safeEmail = email.replace(/[^a-z0-9]/gi, '_').toLowerCase();
