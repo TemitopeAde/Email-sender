@@ -7,7 +7,7 @@ const cors = require("cors");
 
 const app = express()
 // app.use(cors("*"))
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: '*' }))
 app.use(bodyParser.json());
 
 app.post('/api/v1/send-email', sendProtonEmail)
